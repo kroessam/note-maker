@@ -12,6 +12,19 @@ h1 {
   text-align: center;
 }
 
+.btn {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: background-color .25s linear, color .25s linear;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #eee;
+}
 
 
 @media (min-width: 500px) {
