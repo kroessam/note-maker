@@ -3,21 +3,37 @@ html {
   margin: 0;
 }
 
+body {
+  margin: 0;
+}
+
+header {
+  height: 70px;
+  background-color: #cff;
+  margin-bottom: 10px;
+}
+
 main {
   min-height: 600px;
   background-color: #eee;
+  padding: 20px;
 }
 
-h1 {
-  text-align: center;
+.btn-box {
+  width: 400px;
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-around;
 }
 
 .btn {
+  display: inline-block;
   color: #000;
   background-color: #fff;
-  border: 1px solid #000;
+  border: 2px solid #000;
+  border-radius: 10px;
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 10px;
   transition: background-color .25s linear, color .25s linear;
 }
 
@@ -26,6 +42,9 @@ h1 {
   color: #eee;
 }
 
+.text-center {
+  text-align: center;
+}
 
 @media (min-width: 500px) {
   main {
