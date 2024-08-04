@@ -1,1 +1,2 @@
-# note-maker
+# Note Maker
+*Note Maker* is an app made with React that allows users to create a profile and then write, edit, sort, and delete notes. It is intended to be an intuitive experience that also showcases minimalistic but pleasant design principles.
