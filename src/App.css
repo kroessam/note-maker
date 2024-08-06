@@ -34,12 +34,20 @@ main {
   border-radius: 10px;
   text-decoration: none;
   padding: 10px;
-  transition: background-color .25s linear, color .25s linear;
 }
 
 .btn:hover {
-  background-color: #000;
-  color: #eee;
+  animation: shake-fill .3s ease-in forwards;
+}
+
+@keyframes shake-fill {
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    color: #eee;
+    background-color: #000;
+  }
 }
 
 .text-center {
