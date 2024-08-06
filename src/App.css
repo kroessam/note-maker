@@ -5,18 +5,30 @@ html {
 
 body {
   margin: 0;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(135deg, black, white);
 }
 
 header {
   height: 70px;
-  background-color: #cff;
   margin-bottom: 10px;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+  color: #666;
 }
 
 main {
-  min-height: 600px;
   background-color: #eee;
   padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 48px;
 }
 
 .btn-box {
@@ -42,7 +54,7 @@ main {
 
 @keyframes shake-fill {
   50% {
-    transform: rotate(10deg);
+    transform: rotate(5deg);
   }
   100% {
     color: #eee;
