@@ -1,5 +1,6 @@
 :root {
   --btn-bg: #fff;
+  --btn-bg-cancel: #c59393;
   --btn-bg-hover: #333;
   --btn-outline: #eee;
   --btn-text: #000;
@@ -90,6 +91,10 @@ h1 {
 
 .btn:hover {
   animation: shake-fill .3s ease-in forwards;
+}
+
+.btn-cancel {
+  background-color: var(--btn-bg-cancel);
 }
 
 @keyframes shake-fill {
