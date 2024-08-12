@@ -95,10 +95,26 @@ h1 {
   }
 }
 
+.write-container {
+  display: flex;
+  background-color: var(--btn-bg);
+
+  & div {
+    width: 50%;
+    padding: 10px
+  }
+}
+
 .note {
   height: 200px;
   width: 100%;
   resize: none;
+}
+
+#btn-save {
+  display: block;
+  margin: 20px auto;
+  font-size: 24px;
 }
 
 .text-center {
@@ -107,6 +123,10 @@ h1 {
 
 .m-auto {
   margin: auto;
+}
+
+hr {
+  margin: 50px 0;
 }
 
 @media (min-width: 500px) {
