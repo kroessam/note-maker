@@ -1,3 +1,11 @@
+:root {
+  --btn-bg: #c0c9db;
+  --btn-bg-hover: #346ad8;
+  --btn-outline: #9d9cc9;
+  --btn-text: #000;
+  --btn-text-hover: #fff;
+}
+
 html {
   padding: 0;
   margin: 0;
@@ -26,15 +34,19 @@ header {
   padding: 0;
   overflow: hidden;
 
-  & li {
-    display: block;
-    float: left;
-    padding: 20px;
-  }
+  & .link {
+    color: inherit;
 
-  & li:hover {
-    background-color: #222;
-    color: #eee;
+    & li {
+      display: block;
+      float: left;
+      padding: 20px;
+    }
+  
+    & li:hover {
+      background-color: #333;
+      color: #eee;
+    }
   }
 }
 
@@ -49,6 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 48px;
+  text-align: center;
 }
 
 .btn-box {
@@ -60,9 +73,9 @@ h1 {
 
 .btn {
   display: inline-block;
-  color: #000;
-  background-color: #fff;
-  border: 2px solid #000;
+  color: var(--btn-text);
+  background-color: var(--btn-bg);
+  border: 1px solid var(--btn-outline);
   border-radius: 10px;
   text-decoration: none;
   padding: 10px;
@@ -74,16 +87,46 @@ h1 {
 
 @keyframes shake-fill {
   50% {
-    transform: rotate(5deg);
+    transform: rotate(2deg);
   }
   100% {
-    color: #eee;
-    background-color: #000;
+    color: var(--btn-text-hover);
+    background-color: var(--btn-bg-hover);
   }
+}
+
+.write-container {
+  display: flex;
+  background-color: var(--btn-bg);
+
+  & div {
+    width: 50%;
+    padding: 10px
+  }
+}
+
+.note {
+  height: 200px;
+  width: 100%;
+  resize: none;
+}
+
+#btn-save {
+  display: block;
+  margin: 20px auto;
+  font-size: 24px;
 }
 
 .text-center {
   text-align: center;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+hr {
+  margin: 50px 0;
 }
 
 @media (min-width: 500px) {
