@@ -107,8 +107,18 @@ h1 {
   }
 }
 
+.note {
+  height: 200px;
+  width: 100%;
+  resize: none;
+}
+
 .text-center {
   text-align: center;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 @media (min-width: 500px) {
