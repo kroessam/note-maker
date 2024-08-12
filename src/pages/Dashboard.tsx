@@ -2,9 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Dashboard = () => {
-  const [isAdding, setIsAdding] = useState(false);
   const [note, setNote] = useState("Write Here!");
-  const [notesList, setNotesList] = useState([]);
+  const [notesList, setNotesList] = useState<string[]>([]);
 
   const getDate = () => {
     let date = new Date();
@@ -20,8 +19,9 @@ const Dashboard = () => {
 
   const [date, setDate] = useState(getDate());
 
-  const handleAddClick = () => {
-    setIsAdding(!isAdding);
+  const handleSave = () => {
+    setDate(getDate); // Update date (and time!) on save
+    setNotesList([...notesList, `${date}: ${note}`]); // Add note w/ date to list
   };
 
   return (
@@ -31,20 +31,23 @@ const Dashboard = () => {
           Back to Home
         </Link>
         <h1>Dashboard</h1>
-        <button
-          className={"btn text-center" + (isAdding ? " btn-cancel" : "")}
-          onClick={handleAddClick}
-        >
-          {isAdding ? "Cancel" : "Add New"}
-        </button>
         <textarea
           className="note"
           value={note}
           onChange={(e) => setNote(e.target.value)}
         ></textarea>
+        <button className="btn" onClick={handleSave}>
+          Save
+        </button>
+        <hr />
         <h2 className="text-center">Note Preview</h2>
         <h3>{date}</h3>
         <p>{note}</p>
+        <hr />
+        <h2 className="text-center">Past Notes</h2>
+        {notesList.map((thisNote) => (
+          <p>{thisNote}</p>
+        ))}
       </main>
     </>
   );
