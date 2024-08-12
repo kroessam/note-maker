@@ -1,3 +1,18 @@
+:root {
+  --btn-bg: #fff;
+  --btn-bg-hover: #333;
+  --btn-outline: #eee;
+  --btn-text: #000;
+  --btn-text-hover: #ddd;
+
+  /* test */
+  --btn-bg: #c0c9db;
+  --btn-bg-hover: #346ad8;
+  --btn-outline: #9d9cc9;
+  --btn-text: #000;
+  --btn-text-hover: #fff;
+}
+
 html {
   padding: 0;
   margin: 0;
@@ -33,7 +48,7 @@ header {
   }
 
   & li:hover {
-    background-color: #222;
+    background-color: #333;
     color: #eee;
   }
 }
@@ -60,9 +75,9 @@ h1 {
 
 .btn {
   display: inline-block;
-  color: #000;
-  background-color: #fff;
-  border: 2px solid #000;
+  color: var(--btn-text);
+  background-color: var(--btn-bg);
+  border: 1px solid var(--btn-outline);
   border-radius: 10px;
   text-decoration: none;
   padding: 10px;
@@ -74,11 +89,11 @@ h1 {
 
 @keyframes shake-fill {
   50% {
-    transform: rotate(5deg);
+    transform: rotate(2deg);
   }
   100% {
-    color: #eee;
-    background-color: #000;
+    color: var(--btn-text-hover);
+    background-color: var(--btn-bg-hover);
   }
 }
 
