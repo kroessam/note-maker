@@ -20,6 +20,21 @@ const Home = () => {
             Continue as Guest
           </Link>
         </div>
+        <hr />
+        <section>
+          <h2>About this Project</h2>
+          <p>
+            Note Maker is all about developing a simple note taking application
+            using React and TypeScript.
+          </p>
+          <p>
+            To learn more, you are welcome to browse the{" "}
+            <a href="https://github.com/kroessam/note-maker">
+              source code on Github
+            </a>
+            .
+          </p>
+        </section>
       </main>
     </>
   );

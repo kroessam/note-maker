@@ -10,7 +10,7 @@ import { useState } from "react";
 
 function App() {
 
-  const [currentUser, setCurrentUser] = useState("");
+  const [currentUser, setCurrentUser] = useState("Guest");
 
   return (
     <>

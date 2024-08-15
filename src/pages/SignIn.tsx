@@ -12,7 +12,7 @@ const SignIn = () => {
         <Link className="btn" to="/">
           Back to Home
         </Link>
-        <h1>Sign In</h1>
+        <h1>{hasAccount ? "Sign In" : "Create Account"}</h1>
         {hasAccount ? <SignInForm /> : <SignUpForm />}
         <p
           className="txt-click"
