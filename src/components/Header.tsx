@@ -1,6 +1,16 @@
 import { Link } from "react-router-dom";
 
-const Header = () => {
+interface Props {
+  displayName: string;
+}
+
+const Header = ({ displayName }: Props) => {
+  let displayMessage = "";
+
+  if (displayName !== "") {
+    displayMessage = `Welcome, ${displayName}`;
+  }
+
   return (
     <header className="text-center">
       <nav>
@@ -21,6 +31,7 @@ const Header = () => {
             <li>Profile</li>
           </Link>
         </ul>
+        <p>{displayMessage}</p>
       </nav>
     </header>
   );
