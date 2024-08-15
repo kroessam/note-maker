@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const SignUpForm = () => {
   return (
     <form id="form-sign-up">
@@ -22,7 +24,9 @@ const SignUpForm = () => {
         <input type="text" id="password" name="password" />
       </div>
       <div>
-        <button className="btn">Create Account</button>
+        <Link to="/dashboard">
+          <button className="btn">Create Account</button>
+        </Link>
       </div>
     </form>
   );

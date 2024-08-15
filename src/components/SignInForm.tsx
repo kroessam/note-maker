@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const SignInForm = () => {
   return (
     <form id="form-sign-in">
@@ -10,7 +12,9 @@ const SignInForm = () => {
         <input type="text" id="password" name="password" />
       </div>
       <div>
-        <button className="btn">Sign In</button>
+        <Link to="/dashboard">
+          <button className="btn">Sign In</button>
+        </Link>
       </div>
     </form>
   );
