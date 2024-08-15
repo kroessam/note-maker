@@ -30,6 +30,20 @@ header {
   justify-content: center;
 }
 
+footer {
+  background-color: #111;
+  color: #f3f3f3;
+  height: 20vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  & p {
+    margin: 0;
+  }
+}
+
 nav {
   display: flex;
   justify-content: space-between;
