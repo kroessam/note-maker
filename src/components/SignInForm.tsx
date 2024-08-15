@@ -1,11 +1,11 @@
 const SignInForm = () => {
   return (
     <form id="form-sign-in">
-      <div>
+      <div className="input-group">
         <label htmlFor="username">Username: </label>
         <input type="text" id="username" name="username" />
       </div>
-      <div>
+      <div className="input-group">
         <label htmlFor="password">Password: </label>
         <input type="text" id="password" name="password" />
       </div>

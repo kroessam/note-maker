@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import SignInForm from "../components/SignInForm";
+import SignUpForm from "../components/SignUpForm";
 
 const SignIn = () => {
   return (
@@ -10,6 +11,7 @@ const SignIn = () => {
         </Link>
         <h1>Sign In</h1>
         <SignInForm />
+        <SignUpForm />
       </main>
     </>
   );
