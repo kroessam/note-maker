@@ -13,14 +13,9 @@ const Home = () => {
           </p>
         </div>
         <div className="btn-box">
-          <Link className="btn" to="/sign-up">
-            Sign Up
-          </Link>
           <Link className="btn" to="/sign-in">
-            Sign In
+            Sign Up / Log In
           </Link>
-        </div>
-        <div className="btn-box">
           <Link className="btn" to="/dashboard">
             Continue as Guest
           </Link>
