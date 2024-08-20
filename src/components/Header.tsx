@@ -14,6 +14,9 @@ const Header = ({ displayName }: Props) => {
   return (
     <header className="text-center">
       <nav>
+        <Link className="link" to="/">
+          <img id="navbar-logo" src="/favicon-100.svg"></img>
+        </Link>
         <ul className="nav-links">
           <Link className="link" to="/">
             <li>Home</li>
@@ -31,7 +34,8 @@ const Header = ({ displayName }: Props) => {
             <li>Profile</li>
           </Link>
         </ul>
-        <p>{displayMessage}</p>
+        <p id="username">
+          <Link className="link" to="/profile">{displayMessage}</Link></p>
       </nav>
     </header>
   );

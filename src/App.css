@@ -46,12 +46,26 @@ footer {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   background-color: #d6d6d6;
 
   & p {
     padding: 20px;
     margin: 0;
+  }
+}
+
+#navbar-logo {
+  height: 45px;
+  margin: 5px;
+}
+
+#username {
+  margin-left: auto;
+  
+  & .link {
+    text-decoration: none;
+    color: inherit;
   }
 }
 
@@ -68,13 +82,29 @@ nav {
     & li {
       display: block;
       float: left;
-      padding: 20px;
+      padding: 5px 10px;
+      margin: 0 10px;
+      border-radius: 5px;
     }
   
     & li:hover {
-      background-color: #333;
-      color: #eee;
+      animation: jump .2s ease-in forwards;
     }
+  }
+}
+
+@keyframes jump {
+  33% {
+    transform: translateX(-1px);
+  }
+  
+  66% {
+    transform: translateX(1px);
+  }
+
+  100% {
+    background-color: #555;
+    color: #eee;
   }
 }
 
