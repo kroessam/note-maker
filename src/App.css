@@ -235,6 +235,21 @@ hr {
   margin: 50px 0;
 }
 
+.profile-box {
+  display: flex;
+  margin-bottom: 50px;
+
+  & div {
+    margin: 20px;
+  }
+
+  & #profile-img-placeholder {
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+  }
+}
+
 @media (min-width: 500px) {
   main {
     margin: 0 10%;
