@@ -27,6 +27,7 @@ main {
 
 header {
   position: fixed;
+  z-index: 1;
   width: 100%;
   background-color: #f3f3f3;
   color: #666;
